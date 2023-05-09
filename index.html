@@ -5,11 +5,20 @@
     <title>Test Page</title>
 
     <style>
-        p {
+        p { /* Tag selector */
             color: #4A8F3C;
             /* font-size: 30px; -- 1px = 1/96 inch -- абсолютний розмір */
             /* font-size: 30pt; -- typographic punkts -- абсолютний розмір */
             font-size: 30px;
+        }
+
+        #paragraph { /* Id selector */
+            color: blueviolet;
+            font-size: 50px;
+        }
+
+        .red-text { /* Class selector */
+            color: red;
         }
     </style>
 </head>
@@ -22,7 +31,9 @@
 
     <main>
 
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, labore.</p>
+        <p>1Lorem ipsum, dolor <span class="red-text">sit amet</span> consectetur adipisicing elit. Cumque, labore.</p>
+        <p class="red-text">2Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, labore.</p>
+        <p id="paragraph">3Lorem ipsum, dolor <span class="red-text">sit amet</span> consectetur adipisicing elit. Cumque, labore.</p>
 
     </main>
 
