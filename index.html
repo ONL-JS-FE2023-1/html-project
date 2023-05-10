@@ -5,21 +5,49 @@
     <title>Test Page</title>
 
     <style>
-        p { /* Tag selector */
+        p {
+            /* Tag selector - 001 */
             color: #4A8F3C;
             /* font-size: 30px; -- 1px = 1/96 inch -- абсолютний розмір */
             /* font-size: 30pt; -- typographic punkts -- абсолютний розмір */
             font-size: 30px;
         }
 
-        #paragraph { /* Id selector */
+        #paragraph {
+            /* Id selector - 100 */
             color: blueviolet;
             font-size: 50px;
         }
 
-        .red-text { /* Class selector */
+        .red-text {
+            /* Class selector - 010 */
             color: red;
         }
+
+        .yellow-text {
+            color: yellow;
+        }
+
+        #heading {
+            /* 100 кг */
+            color: aquamarine;
+            font-size: 50px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            /* 1 кг */
+            font-size: 100px;
+        }
+
+        #black-color {
+            color: black;
+            font-size: 14px;
+            background-color: chocolate;
+        }
+
+        /* inline - 1000 */
     </style>
 </head>
 
@@ -31,9 +59,17 @@
 
     <main>
 
-        <p>1Lorem ipsum, dolor <span class="red-text">sit amet</span> consectetur adipisicing elit. Cumque, labore.</p>
-        <p class="red-text">2Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, labore.</p>
-        <p id="paragraph">3Lorem ipsum, dolor <span class="red-text">sit amet</span> consectetur adipisicing elit. Cumque, labore.</p>
+        <div id="black-color">
+            <h1 style="color: rgb(232, 11, 176);">Heading!</h1>
+            <h2 id="heading">SubHeading</h2>
+
+            <p>1Lorem ipsum, dolor <span class="red-text">sit amet</span> consectetur adipisicing elit. Cumque, labore.
+            </p>
+            <p class="yellow-text red-text">2Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, labore.
+            </p>
+            <p id="paragraph">3Lorem ipsum, dolor <span class="red-text">sit amet</span> consectetur adipisicing elit.
+                Cumque, labore.</p>
+        </div>
 
     </main>
 
