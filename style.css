@@ -1,0 +1,42 @@
+p {
+    /* Tag selector - 001 */
+    color: #4A8F3C;
+    /* font-size: 30px; -- 1px = 1/96 inch -- абсолютний розмір */
+    /* font-size: 30pt; -- typographic punkts -- абсолютний розмір */
+    font-size: 30px;
+}
+
+#paragraph {
+    /* Id selector - 100 */
+    color: blueviolet;
+    font-size: 50px;
+}
+
+.red-text {
+    /* Class selector - 010 */
+    color: red;
+}
+
+.yellow-text {
+    color: rgb(207, 207, 100);
+}
+
+#heading {
+    /* 100 кг */
+    color: aquamarine;
+    font-size: 50px;
+}
+
+h1,
+h2,
+h3 {
+    /* 1 кг */
+    font-size: 100px;
+}
+
+#black-color {
+    color: black;
+    font-size: 14px;
+}
+
+/* inline - 1000 */
