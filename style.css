@@ -3,7 +3,11 @@ p {
     color: #4A8F3C;
     /* font-size: 30px; -- 1px = 1/96 inch -- абсолютний розмір */
     /* font-size: 30pt; -- typographic punkts -- абсолютний розмір */
-    font-size: 30px;
+    font-size: 30px; /* em - відносна одиниця виміру. 1em - один розмір шрифту */
+    line-height: 2em;
+    text-align: justify;
+    /* text-decoration: line-through; /* закреслений текст */
+    font-family: 'Dancing Script', 'Exo 2', cursive;
 }
 
 #paragraph {
@@ -36,7 +40,28 @@ h3 {
 
 #black-color {
     color: black;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 /* inline - 1000 */
+
+.big-symbol {
+    text-transform: uppercase;
+}
+
+.low-symbol {
+    text-transform: lowercase;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.bc-yellow {
+    background-color: yellow;
+}
+
+.fw-bold {
+    font-weight: bold;
+}
