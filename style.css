@@ -1,74 +1,23 @@
-@font-face {
-    font-family: 'Nunito-Extra-Light';
-    src: url('./fonts/Nunito-ExtraLight.ttf');
-}
-
-p {
-    /* Tag selector - 001 */
-    color: #4A8F3C;
-    /* font-size: 30px; -- 1px = 1/96 inch -- абсолютний розмір */
-    /* font-size: 30pt; -- typographic punkts -- абсолютний розмір */
-    font-size: 30px; /* em - відносна одиниця виміру. 1em - один розмір шрифту */
-    line-height: 2em;
-    text-align: justify;
-    /* text-decoration: line-through; /* закреслений текст */
-    /* font-family: 'Dancing Script', 'Exo 2', cursive; */
-    /* font-family: 'Playfair Display', serif; */
-    font-family: 'Nunito-Extra-Light';
-}
-
-#paragraph {
-    /* Id selector - 100 */
-    color: blueviolet;
-    font-size: 50px;
-}
-
-.red-text {
-    /* Class selector - 010 */
+.main-article {
+    font-size: 60px;
     color: red;
+    border: 16px dotted green;
 }
 
-.yellow-text {
-    color: rgb(207, 207, 100);
+.article-header {
+    
 }
 
-#heading {
-    /* 100 кг */
-    color: aquamarine;
-    font-size: 50px;
+.article-content {
+    color: inherit;
+    border: none;
 }
 
-h1,
-h2,
-h3 {
-    /* 1 кг */
-    font-size: 100px;
-}
-
-#black-color {
-    color: black;
-    font-size: 15px;
-}
-
-/* inline - 1000 */
-
-.big-symbol {
-    text-transform: uppercase;
-}
-
-.low-symbol {
-    text-transform: lowercase;
-}
-
-a {
+.article-link {
     text-decoration: none;
-    color: black;
+    color: inherit;
 }
 
-.bc-yellow {
-    background-color: yellow;
-}
-
-.fw-bold {
-    font-weight: bold;
+.article-span {
+    border: inherit;
 }
