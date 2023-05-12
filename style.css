@@ -1,18 +1,31 @@
-.navigation {
-
+li:first-child {
+    color: blue;
 }
 
-.link-list li {
-    display: inline-block;
-    margin-top: 30px;
+li:last-child {
+    color: green;
 }
 
-.page-link {
-    background-color: lightblue;
-    padding: 10px;
-    color: black;
+li:nth-child(odd) {
+    color: red;
 }
 
-.page-link:active {
-    background-color: orange;
+li:nth-child(even) {
+    color: orange;
+}
+
+li:nth-child(5) {
+    color: aquamarine;
+}
+
+/* li:nth-child(n+4) {
+    background-color: bisque;
+} */
+
+/* li:nth-child(-n+5) {
+    background-color: bisque;
+} */
+
+li:nth-child(2n+3) {
+    background-color: bisque;
 }
