@@ -1,13 +1,19 @@
-div {
-    width: 100px;
-    height: 100px;
-    border: 1px solid black;
-    text-align: center;
-    font-size: 40px;
-    background-color: bisque;
+.navigation {
+
 }
 
-div:hover {
-    background-color: black;
-    color: white;
+.link-list li {
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.page-link {
+    background-color: lightblue;
+    padding: 10px;
+    color: black;
+}
+
+.page-link:hover {
+    background-color: dodgerblue;
+    color: bisque;
 }
