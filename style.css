@@ -13,12 +13,6 @@
     color: black;
 }
 
-.page-link:hover {
-    background-color: dodgerblue;
-    color: bisque;
-}
-
-.page-link:focus {
-    border: 5px solid green;
-    background-color: aqua;
+.page-link:active {
+    background-color: orange;
 }
