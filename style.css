@@ -1,4 +1,4 @@
-.container {
+/* .container {
     background-color: lime;
     height: 800px;
     width: 80%;
@@ -14,8 +14,8 @@
 .inner {
     text-align: center;
     font-size: 40px;
-    /* width: 80px;
-    height: 80px; */
+    width: 80px;
+    height: 80px;
     background-color: forestgreen;
     border: 1px solid black;
 }
@@ -32,11 +32,55 @@
 
 .div3 {
     position: fixed;
-    bottom: 0;
-    right: 0;
-    left: 0;
+    top: 0;
 }
 
 .div4 {
 
+} */
+
+/* 
+
+
+Зробити 4 блоки з різним фоновим кольором, по одному в кожен бік екрану.
+Так, щоб як не скролити - щоб вони залишалися на тому ж місці.
+
+1. у верхньому лівому кутку.
+2. у верхньому правому кутку.
+3. у нижньому лівому.
+4. у нижньому правому.
+
+
+*/
+
+.box {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+
+    border: 1px solid black;
+}
+
+.box-1 {
+    top: 0;
+    left: 0;
+    background-color: red;
+}
+
+.box-2 {
+    top: 0;
+    right: 0;
+    background-color: green;
+}
+
+.box-3 {
+    bottom: 0;
+    left: 0;
+    background-color: blue;
+}
+
+.box-4 {
+    bottom: 0;
+    right: 0;
+    background-color: yellow;
 }
