@@ -11,3 +11,8 @@ p::first-letter {
 p::first-line {
     background-color: yellowgreen;
 }
+
+p::selection {
+    background-color: yellow;
+    color: pink;
+}
