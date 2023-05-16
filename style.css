@@ -21,10 +21,10 @@
 
 .sub-nav-list {
     position: absolute;
-    top: 40px;
-    left: -20px;
-    display: block;
-
+    top: 62px;
+    left: 2px;
+    width: 175px;
+    padding-left: 0;
 }
 
 .sub-list-item {
@@ -36,4 +36,47 @@
 
 .list-item:hover .sub-list-item {
     display: block;
+}
+
+.sub-sub-nav-list {
+    position: absolute;
+    width: 165px;
+    display: block;
+    top: 125px;
+    left: 135px;
+}
+
+.sub-sub-list-item {
+    display: none;
+    background-color: rgb(255, 128, 0);
+    padding: 20px;
+}
+
+.sub-list-item:hover .sub-sub-list-item {
+    display: block;
+}
+
+.sub-sub-sub-nav-list {
+    position: absolute;
+    display: block;
+    width: 165px;
+    top: 125px;
+    left: 165px;
+}
+
+.sub-sub-sub-list-item {
+    display: none;
+    background-color: rgb(255, 128, 0);
+    padding: 20px;
+}
+
+.sub-sub-list-item:hover .sub-sub-sub-list-item {
+    display: block;
+}
+
+.list-item:hover,
+.sub-list-item:hover,
+.sub-sub-list-item:hover,
+.sub-sub-sub-list-item:hover {
+    background-color: rgb(255, 81, 0);
 }
