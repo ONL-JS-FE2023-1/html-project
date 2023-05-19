@@ -11,7 +11,7 @@
 
 <body>
     <form class="form" action="" method="POST">
-        <h2>Sign in</h2>
+        <h2>Sign up</h2>
         <label class="required" for="email-form">Type your email</label>
         <input type="text" placeholder="example@mail.com" autofocus id="email-form" name="email"
             pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+"
@@ -22,15 +22,40 @@
 
         <input type="date" name="birtday">
 
-        <label>
-            <input type="radio" value="Male" name="gender" checked />Male
-        </label>
-        <label>
-            <input type="radio" value="Female" name="gender" />Female
-        </label>
-        <label>
-            <input type="radio" value="Nonbinary" name="gender" />Nonbinary
-        </label>
+        <fieldset>
+            <legend>Choose your city</legend>
+
+            <select name="city">
+                <option value="Kyiv">Kyiv</option>
+                <option value="Dnipro">Dnipro</option>
+                <option value="Kharkiv">Kharkiv</option>
+                <optgroup label="Dnipropetrovska obl.">
+                    <option value="Kryvyi-Rig">Kryvyi Rig</option>
+                    <option value="Pavlograd">Pavlograd</option>
+                    <option value="Other">Other....</option>
+                </optgroup>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Choose your avatar</legend>
+            <input type="file" />
+        </fieldset>
+
+        <fieldset>
+            <legend>Information about your gender</legend>
+
+            <label>
+                <input type="radio" value="Male" name="gender" required />Male
+            </label>
+            <label>
+                <input type="radio" value="Female" name="gender" />Female
+            </label>
+            <label>
+                <input type="radio" value="Nonbinary" name="gender" />Nonbinary
+            </label>
+
+        </fieldset>
 
         <label>
             <input type="checkbox" name="is-adult" />Чи є Вам 18 років?
@@ -39,7 +64,7 @@
             <input type="checkbox" name="is-agree" required />Чи погоджуєтесь Ви з нашою політикою конфіденційності?
         </label>
 
-        <button type="submit">Sign In</button>
+        <button type="submit">Sign up</button>
     </form>
 </body>
 
