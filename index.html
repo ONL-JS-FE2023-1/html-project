@@ -12,11 +12,33 @@
 <body>
     <form class="form" action="" method="POST">
         <h2>Sign in</h2>
-        <label for="email-form">Type your email</label>
+        <label class="required" for="email-form">Type your email</label>
         <input type="text" placeholder="example@mail.com" autofocus id="email-form" name="email"
-            pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+">
-        <label for="password-form">Type your password</label>
-        <input type="password" placeholder="qwerty123" id="password-form" name="password">
+            pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+"
+            required
+            >
+        <label class="required" for="password-form">Type your password</label>
+        <input type="password" placeholder="qwerty123" id="password-form" name="password" required>
+
+        <input type="date" name="birtday">
+
+        <label>
+            <input type="radio" value="Male" name="gender" checked />Male
+        </label>
+        <label>
+            <input type="radio" value="Female" name="gender" />Female
+        </label>
+        <label>
+            <input type="radio" value="Nonbinary" name="gender" />Nonbinary
+        </label>
+
+        <label>
+            <input type="checkbox" name="is-adult" />Чи є Вам 18 років?
+        </label>
+        <label>
+            <input type="checkbox" name="is-agree" required />Чи погоджуєтесь Ви з нашою політикою конфіденційності?
+        </label>
+
         <button type="submit">Sign In</button>
     </form>
 </body>
