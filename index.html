@@ -10,59 +10,57 @@
 </head>
 
 <body>
-    <form class="form" action="" method="POST">
-        <h2>Sign up</h2>
-        <label class="required" for="email-form">Type your email</label>
-        <input type="text" placeholder="example@mail.com" autofocus id="email-form" name="email"
-            pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+"
-            required
-            >
-        <label class="required" for="password-form">Type your password</label>
-        <input type="password" placeholder="qwerty123" id="password-form" name="password" required>
+    <h1>Travel reservation form</h1>
+    <h3>* denotes mandotory</h3>
 
-        <input type="date" name="birtday">
-
-        <fieldset>
-            <legend>Choose your city</legend>
-            <input type="text" name="city" list="cities">
-
-            <datalist id="cities">
-                <option value="Kyiv"></option>
-                <option value="Dnipro"></option>
-                <option value="Kryvyi-Rig"></option>
-            </datalist>
-        </fieldset>
-
-        <fieldset>
-            <legend>Choose your avatar</legend>
-            <input type="file" multiple />
-        </fieldset>
-
-        <fieldset>
-            <legend>Information about your gender</legend>
-
-            <label>
-                <input type="radio" value="Male" name="gender" required />Male
-            </label>
-            <label>
-                <input type="radio" value="Female" name="gender" />Female
-            </label>
-            <label>
-                <input type="radio" value="Nonbinary" name="gender" />Nonbinary
-            </label>
-
-        </fieldset>
-
-        <label>
-            <input type="checkbox" name="is-adult" />Чи є Вам 18 років?
-        </label>
-        <label>
-            <input type="checkbox" name="is-agree" required />Чи погоджуєтесь Ви з нашою політикою конфіденційності?
+    <form action="/blabla" method="POST">
+        <label>Full name*:
+            <input type="text" name="fullName" placeholder="FirstName LastName" autofocus />
         </label>
 
+        <br />
 
-        <textarea name="text"></textarea>
-        <button type="submit">Sign up</button>
+        <label>Email address*: 
+            <input type="text" name="email" placeholder="EMAIL_ADDRESS" />
+        </label>
+
+        <br />
+
+        <label>Select Tour Package*:
+            <select name="package">
+                <option value="Goa">Goa</option>
+                <option value="Malibu">Malibu</option>
+            </select>
+        </label>
+
+        <br />
+
+        <label>Arrival date*:
+            <input type="date" name="arrivalDate" />
+        </label>
+
+        <br />
+
+        <label>What would you want to avail?*
+            <br />
+            Boarding<input type="checkbox" name="avail" value="boarding" />
+            <br />
+            Fooding<input type="checkbox" name="avail" value="fooding" />
+            <br />
+            Sight seeing<input type="checkbox" name="avail" value="sightSeeing" />
+        </label>
+
+        <br />
+
+        <label>Terms and conditions* 
+            <br />
+            <input type="radio" name="rules" value="agree" checked>I agree
+            <input type="radio" name="rules" value="disAgree">I disagree
+        </label>
+
+        <br />
+
+        <button type="submit">Complete reservation</button>
     </form>
 </body>
 
