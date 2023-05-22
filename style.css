@@ -8,9 +8,27 @@ ul {
 
 li {
     display: inline-block;
-    background-color: rgb(168, 65, 65);
+    background-color: rgb(149, 243, 25);
     padding: 10px;
     font-size: 2rem;
+}
+
+@media screen and (min-width: 300px) and (max-width: 500px) {
+    li {
+        display: block;
+        background-color: rgb(243, 192, 25);
+        padding: 10px;
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 299px) {
+    li {
+        display: block;
+        background-color: rgb(38, 182, 160);
+        padding: 10px;
+        font-size: 2rem;
+    }
 }
 
 /* 
