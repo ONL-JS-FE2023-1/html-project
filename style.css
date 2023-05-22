@@ -1,0 +1,20 @@
+:root {
+    font-size: 20px;
+}
+
+ul {
+    font-size: 0;
+}
+
+li {
+    display: inline-block;
+    background-color: rgb(168, 65, 65);
+    padding: 10px;
+    font-size: 2rem;
+}
+
+/* 
+1 em = 1 parent font-size
+rem - relative em (root em)
+1 rem = 1 font-size root
+*/
